@@ -1,0 +1,283 @@
+<VRTDataset rasterXSize="6000" rasterYSize="6000">
+  <GeoTransform>  9.3799950000000000e+05,  1.0000000000000000e+00,  0.0000000000000000e+00,  6.2330005000000000e+06,  0.0000000000000000e+00, -1.0000000000000000e+00</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MINIMUM">-0.079999998211861</MDI>
+      <MDI key="STATISTICS_MAXIMUM">507.79000854492</MDI>
+      <MDI key="STATISTICS_MEAN">165.70372204285</MDI>
+      <MDI key="STATISTICS_STDDEV">174.74880198863</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+    <NoDataValue>-99999</NoDataValue>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0938_6228_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="0" yOff="5000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0938_6229_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="0" yOff="4000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0938_6230_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="0" yOff="3000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0938_6231_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="0" yOff="2000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0938_6232_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="0" yOff="1000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0938_6233_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0939_6228_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="1000" yOff="5000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0939_6229_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="1000" yOff="4000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0939_6230_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="1000" yOff="3000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0939_6231_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="1000" yOff="2000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0939_6232_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="1000" yOff="1000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0939_6233_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="1000" yOff="0" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0940_6228_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="2000" yOff="5000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0940_6229_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="2000" yOff="4000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0940_6230_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="2000" yOff="3000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0940_6231_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="2000" yOff="2000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0940_6232_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="2000" yOff="1000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0940_6233_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="2000" yOff="0" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0941_6228_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="3000" yOff="5000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0941_6229_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="3000" yOff="4000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0941_6230_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="3000" yOff="3000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0941_6231_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="3000" yOff="2000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0941_6232_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="3000" yOff="1000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0941_6233_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="3000" yOff="0" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0942_6228_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="4000" yOff="5000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0942_6229_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="4000" yOff="4000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0942_6230_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="4000" yOff="3000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0942_6231_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="4000" yOff="2000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0942_6232_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="4000" yOff="1000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0942_6233_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="4000" yOff="0" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0943_6228_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="5000" yOff="5000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0943_6229_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1000" RasterYSize="1000" DataType="Float64" BlockXSize="1000" BlockYSize="1" />
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="5000" yOff="4000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0943_6230_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="5000" yOff="3000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0943_6231_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="5000" yOff="2000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0943_6232_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="5000" yOff="1000" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="1">RGEALTI_2-0_1M_ASC_LAMB93-IGN69_D083_2024-02-02/RGEALTI/1_DONNEES_LIVRAISON_2024-03-00239/RGEALTI_MNT_1M_ASC_LAMB93_IGN69_D083_20240326/RGEALTI_FXX_0943_6233_MNT_LAMB93_IGN69.asc</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SrcRect xOff="0" yOff="0" xSize="1000" ySize="1000" />
+      <DstRect xOff="5000" yOff="0" xSize="1000" ySize="1000" />
+      <NODATA>-99999</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
