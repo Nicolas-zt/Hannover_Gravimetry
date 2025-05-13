@@ -5,7 +5,7 @@ import rasterio
 from scipy.ndimage import zoom, gaussian_filter
 from mpl_toolkits.mplot3d import Axes3D
 import pyvista as pv
-import flopy.plot
+# from flopy.mf6.modflow.mfgwfrch import ModflowGwfRch
 # from flopy.utils.binaryfile import MF6HeadFile
 
 # Grid
@@ -18,7 +18,7 @@ delr = delc = 10.0 # Size of rows / columns in meters
 # Time periods
 nper = 8 # Number of time periods
 perlen = [30,60,45,45,60,30,60,35] # Duration of each period in days
-nstp = [10]*8 # Number ofsteps per period, determines the temporal precision
+nstp = [3]*8 # Number ofsteps per period, determines the temporal precision
 
 
 
@@ -201,7 +201,6 @@ def modflow():
 
     tsmult = [1.0] * nper
     
-    print(nper)
     tdis = flopy.mf6.ModflowTdis(
     mf,
     nper=nper,
@@ -303,37 +302,37 @@ def modflow():
     
     
     perioddata = {
-        0 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        0 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
-        1 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        1 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
-        2 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        2 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
-        3 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        3 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
-        4 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        4 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
-        5 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        5 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0) 
             ],
-        6 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        6 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
-        7 : [(0, "RATE", -500.0),
-             (1, "RATE", -500.0),
-             (2, "RATE", -500.0)
+        7 : [(0, "RATE", -50.0),
+             (1, "RATE", -50.0),
+             (2, "RATE", -50.0)
             ],
         }
     
@@ -343,31 +342,30 @@ def modflow():
     maw_pkg = flopy.mf6.ModflowGwfmaw(
     gwf,
     pname="MAW",
-    auxiliary=["concentration"],
     boundnames=True,
     print_input=True,
     print_flows=True,
     save_flows=True,
     mover=False,
     packagedata=[
-        (0, 0.1, np.mean(botm7), 90.0, "SKIN", 7, None),  # (maw_id, radius, bottom, type, pump elev, head)
-        (1, 0.1, np.mean(botm3), 90.0, "SKIN", 2, None),
-        (2, 0.1, np.mean(botm5), 90.0, "SKIN", 4, None)
+        (0, 0.1, np.min(botm7), 90.0, "SKIN", 7),  # (maw_id, radius, bottom, type, pump elev, head)
+        (1, 0.1, np.min(botm3), 90.0, "SKIN", 2),
+        (2, 0.1, np.min(botm5), 90.0, "SKIN", 4)
     ],
     connectiondata=[
-        (0, 1, (0, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 1st layer
-        (0, 1, (1, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 2nd layer
-        (0, 1, (2, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 3rd layer
-        (0, 1, (3, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 4th layer
-        (0, 1, (4, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 5th layer
-        (0, 1, (5, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 6th layer
-        (0, 1, (6, 500, 200), 50.0, 45.0, 5.0, 0.1),  # 7th layer
-        (1, 1, (0, 100, 400), 50.0, 45.0, 5.0, 0.1),
-        (1, 1, (1, 100, 400), 50.0, 45.0, 5.0, 0.1),
-        (2, 1, (0, 300, 300), 50.0, 45.0, 5.0, 0.1),
-        (2, 1, (1, 300, 300), 50.0, 45.0, 5.0, 0.1),
-        (2, 1, (2, 300, 300), 50.0, 45.0, 5.0, 0.1),
-        (2, 1, (3, 300, 300), 50.0, 45.0, 5.0, 0.1),    
+        (0, 0, (0, 500, 200), np.min(top)  , np.min(botm1), hk_values[0] - 1E-7, 0.2),  # 1st layer
+        (0, 1, (1, 500, 200), np.min(botm1), np.min(botm2), hk_values[1] - 1E-7, 0.2),  # 2nd layer
+        (0, 2, (2, 500, 200), np.min(botm2), np.min(botm3), hk_values[2] - 1E-7, 0.2),  # 3rd layer
+        (0, 3, (3, 500, 200), np.min(botm3), np.min(botm4), hk_values[3] - 1E-7, 0.2),  # 4th layer
+        (0, 4, (4, 500, 200), np.min(botm4), np.min(botm5), hk_values[4] - 1E-7, 0.2),  # 5th layer
+        (0, 5, (5, 500, 200), np.min(botm5), np.min(botm6), hk_values[5] - 1E-7, 0.2),  # 6th layer
+        (0, 6, (6, 500, 200), np.min(botm6), np.min(botm7), hk_values[6] - 1E-7, 0.2),  # 7th layer
+        (1, 0, (0, 100, 400), np.min(top)  , np.min(botm1), hk_values[0] - 1E-7, 0.2),
+        (1, 1, (1, 100, 400), np.min(botm1), np.min(botm2), hk_values[1] - 1E-7, 0.2),
+        (2, 0, (0, 300, 300), np.min(top)  , np.min(botm1), hk_values[0] - 1E-7, 0.2),
+        (2, 1, (1, 300, 300), np.min(botm1), np.min(botm2), hk_values[1] - 1E-7, 0.2),
+        (2, 2, (2, 300, 300), np.min(botm2), np.min(botm3), hk_values[2] - 1E-7, 0.2),
+        (2, 3, (3, 300, 300), np.min(botm3), np.min(botm4), hk_values[3] - 1E-7, 0.2)    
     ],
     perioddata=perioddata
     )
@@ -381,7 +379,21 @@ def modflow():
    
     # Reload
     
-    # rch = flopy.modflow.ModflowRch(mf, rech=0.001)
+    rch = flopy.mf6.modflow.ModflowGwfrch(
+    gwf,
+    stress_period_data={
+                        0: [ botm1,float(0.001)],
+                        1: [ botm1,float(0.001)],
+                        2: [ botm1,float(0.001)],
+                        3: [ botm1,float(0.001)],
+                        4: [ botm1,float(0.001)],
+                        5: [ botm1,float(0.001)],
+                        6: [ botm1,float(0.001)],
+                        7: [ botm1,float(0.001)]
+    },  
+    pname="RCH-1",
+    filename="model.rch"
+    )
 
     
     
@@ -405,14 +417,13 @@ def modflow():
     
     ### Exécution
     mf.write_simulation()
-    with open("modflow6_model/nappe_perte.tdis", "r") as f:
-        print(f.read())
     success, buff = mf.run_simulation()
     
     ### Lecture des résultats
     # headobj = MF6HeadFile("nappe_perte.gwf.nappe_perte.hds")  # ou adapte le chemin si tu as changé le nom du modèle
-    # times = headobj.get_times()
-    # head = headobj.get_data(totim=times[-1])
+    headobj = flopy.utils.HeadFile('./modflow6_model/nappe_perte.hds') 
+    times = headobj.get_times()
+    head = headobj.get_data(totim=times[-1])
     
     ### Piezometric levels visualisation
     # plt.figure(figsize=(8, 6))
@@ -440,6 +451,32 @@ def modflow():
     # ax.set_zlabel("Altitude (m)")
     # plt.show()
     
+    
+    # Ouvrir le fichier de têtes
+    try:
+        
+        headfile = flopy.utils.HeadFile('./modflow6_model/nappe_perte.hds')  # adapter chemin si besoin
+        times = headfile.get_times()  # Liste des temps totaux
+        
+        # Récupérer la tête moyenne à chaque temps
+        avg_heads = []
+        for t in times:
+            head = headfile.get_data(totim=t)
+            avg_heads.append(np.nanmean(head))  # Moyenne en ignorant les NaN
+        
+        # Tracer
+        plt.figure(figsize=(8, 4))
+        plt.plot(times, avg_heads, marker='o')
+        plt.xlabel("Temps (jours)")
+        plt.ylabel("Niveau d'eau moyen (m)")
+        plt.title("Évolution du niveau d'eau moyen")
+        plt.grid(True)
+        plt.tight_layout()
+        plt.show()
+        
+    except :
+        pass
+
     ################################### Area 3D visualisation ##########################################
     
     # Define the grid's size to be the same as the modflow's one
